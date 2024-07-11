@@ -7,7 +7,7 @@ pthread_mutex_t	mutex;
 
 void	*my_thread(void)
 {
-	for (int i = 0; i < 10000000; i++)
+	for (int i = 0; i < 1000000000; i++)
 	{
 		pthread_mutex_lock(&mutex);
 		mails++;
